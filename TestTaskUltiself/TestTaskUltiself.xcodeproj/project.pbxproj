@@ -34,6 +34,7 @@
 		3D2CCCA025961C32003AA40A /* HabitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CCC9F25961C32003AA40A /* HabitTableViewCell.xib */; };
 		3D2CCCA325962258003AA40A /* HabitsSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCCA225962258003AA40A /* HabitsSearchViewController.swift */; };
 		3D2CCCA6259622E4003AA40A /* UIViewController + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCCA5259622E4003AA40A /* UIViewController + Alert.swift */; };
+		3D2CCCAD25962899003AA40A /* HabitsFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCCAC25962899003AA40A /* HabitsFetchService.swift */; };
 		DAE3D505A509194B69E921A2 /* Pods_TestTaskUltiself.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9C64E1B4DCEC2944C0F4E3 /* Pods_TestTaskUltiself.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		3D2CCC9F25961C32003AA40A /* HabitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitTableViewCell.xib; sourceTree = "<group>"; };
 		3D2CCCA225962258003AA40A /* HabitsSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsSearchViewController.swift; sourceTree = "<group>"; };
 		3D2CCCA5259622E4003AA40A /* UIViewController + Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Alert.swift"; sourceTree = "<group>"; };
+		3D2CCCAC25962899003AA40A /* HabitsFetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsFetchService.swift; sourceTree = "<group>"; };
 		5E9C64E1B4DCEC2944C0F4E3 /* Pods_TestTaskUltiself.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskUltiself.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB3B67E1DC808006D02A437 /* Pods-TestTaskUltiself.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskUltiself.release.xcconfig"; path = "Target Support Files/Pods-TestTaskUltiself/Pods-TestTaskUltiself.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 		3D2CCC4125960ED1003AA40A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3D2CCCAB25962886003AA40A /* HabitsFetchService */,
 				3D2CCC642596135D003AA40A /* Helpers */,
 				3D2CCC4225960EDB003AA40A /* Network */,
 			);
@@ -265,6 +268,14 @@
 				3D2CCC9F25961C32003AA40A /* HabitTableViewCell.xib */,
 			);
 			path = HabitTableViewCell;
+			sourceTree = "<group>";
+		};
+		3D2CCCAB25962886003AA40A /* HabitsFetchService */ = {
+			isa = PBXGroup;
+			children = (
+				3D2CCCAC25962899003AA40A /* HabitsFetchService.swift */,
+			);
+			path = HabitsFetchService;
 			sourceTree = "<group>";
 		};
 		3D95041409BEC5E7D824A3EE /* Frameworks */ = {
@@ -427,6 +438,7 @@
 				3D2CCC86259617B7003AA40A /* HabitsAPIRequests.swift in Sources */,
 				3D2CCC662596136D003AA40A /* DefaultDecoder.swift in Sources */,
 				3D2CCC5225960FB9003AA40A /* TargetType + Requests.swift in Sources */,
+				3D2CCCAD25962899003AA40A /* HabitsFetchService.swift in Sources */,
 				3D2CCC5E259611EA003AA40A /* ConsoleLogger.swift in Sources */,
 				3D2CCC6125961318003AA40A /* TargetType + BaseConfig.swift in Sources */,
 				3D2CCC4F25960F85003AA40A /* UltiselfAPIError.swift in Sources */,

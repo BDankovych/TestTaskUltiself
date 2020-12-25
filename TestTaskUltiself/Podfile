@@ -8,5 +8,6 @@ target 'TestTaskUltiself' do
   # Pods for TestTaskUltiself
   pod 'SwiftLint'
   pod 'Moya'
+  pod 'ARSLineProgress'
 
 end

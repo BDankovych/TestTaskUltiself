@@ -6,16 +6,22 @@
 //
 
 import UIKit
+import ARSLineProgress
 
 class HabitsSearchViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var searchBar: UISearchBar!
     
-    private var models = [HabitModelDTO]()
+    private var habitsService: HabitsFetchService!
     
+    private var models = [HabitModelDTO]()
+    private var currentQuery: String?
+    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureHabitsService()
         configureTableView()
         configureSearchBar()
     }
@@ -26,6 +32,7 @@ class HabitsSearchViewController: UIViewController {
         tableView.register(cellType: HabitTableViewCell.self)
         tableView.rowHeight = UITableView.automaticDimension
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.tableFooterView = UIView()
     }
     
@@ -33,9 +40,30 @@ class HabitsSearchViewController: UIViewController {
         searchBar.delegate = self
         searchBar.showsCancelButton = true
     }
+    
+    private func configureHabitsService() {
+        habitsService = HabitsFetchService(delegate: self)
+    }
+    
+    // MARK: - Actions
+    private func updateView(with data: [HabitModelDTO]) {
+        models = data
+        tableView.reloadData()
+    }
+    
+    // MARK: - ARSLineProgress
+    private func showSpinner() {
+        view.isUserInteractionEnabled = false
+        ARSLineProgress.show()
+    }
+    
+    private func hideSpinner() {
+        ARSLineProgress.hide()
+        view.isUserInteractionEnabled = true
+    }
 }
 
-// MARK: - UITableViewDataSource
+// MARK: - UITableView DataSource
 extension HabitsSearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         models.count
@@ -50,14 +78,40 @@ extension HabitsSearchViewController: UITableViewDataSource {
     }
 }
 
-// MARK: - UITableViewDataSource
+extension HabitsSearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        habitsService.fetchNextPageIfNeeded(displayedIndex: indexPath.row)
+    }
+}
+
+// MARK: - UISearchBar Delegate
 extension HabitsSearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("Searching ", searchBar.text ?? "", " ...")
         searchBar.resignFirstResponder()
+        guard let query = searchBar.text else { return }
+        currentQuery = query
+        habitsService.fetchData(for: query)
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        print("Cancel pressed")
+        searchBar.resignFirstResponder()
+        searchBar.text = currentQuery
+    }
+}
+
+// MARK: - HabbitFetchService Delegate
+extension HabitsSearchViewController: HabitsFetchServiceDelegate {
+    func dataUpdatedSuccessful(data: [HabitModelDTO], service: HabitsFetchService) {
+        updateView(with: data)
+        hideSpinner()
+    }
+    
+    func dataUpdateFailure(error: Error, service: HabitsFetchService) {
+        hideSpinner()
+        displayAlert(with: error)
+    }
+    
+    func dataUpdatingStarted() {
+        showSpinner()
     }
 }
