@@ -16,6 +16,10 @@
 		3D2CCC4425960F13003AA40A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC4325960F13003AA40A /* NetworkManager.swift */; };
 		3D2CCC4F25960F85003AA40A /* UltiselfAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC4E25960F85003AA40A /* UltiselfAPIError.swift */; };
 		3D2CCC5225960FB9003AA40A /* TargetType + Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC5125960FB9003AA40A /* TargetType + Requests.swift */; };
+		3D2CCC57259611A8003AA40A /* NetworkActivityLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC55259611A8003AA40A /* NetworkActivityLogger.swift */; };
+		3D2CCC5C259611EA003AA40A /* MacSystemConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC59259611EA003AA40A /* MacSystemConsoleLogger.swift */; };
+		3D2CCC5D259611EA003AA40A /* GenericLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC5A259611EA003AA40A /* GenericLogger.swift */; };
+		3D2CCC5E259611EA003AA40A /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC5B259611EA003AA40A /* ConsoleLogger.swift */; };
 		DAE3D505A509194B69E921A2 /* Pods_TestTaskUltiself.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9C64E1B4DCEC2944C0F4E3 /* Pods_TestTaskUltiself.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +36,11 @@
 		3D2CCC4325960F13003AA40A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3D2CCC4E25960F85003AA40A /* UltiselfAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltiselfAPIError.swift; sourceTree = "<group>"; };
 		3D2CCC5125960FB9003AA40A /* TargetType + Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetType + Requests.swift"; sourceTree = "<group>"; };
+		3D2CCC55259611A8003AA40A /* NetworkActivityLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkActivityLogger.swift; sourceTree = "<group>"; };
+		3D2CCC56259611A8003AA40A /* AlamofireNetworkActivityLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlamofireNetworkActivityLogger.h; sourceTree = "<group>"; };
+		3D2CCC59259611EA003AA40A /* MacSystemConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacSystemConsoleLogger.swift; sourceTree = "<group>"; };
+		3D2CCC5A259611EA003AA40A /* GenericLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericLogger.swift; sourceTree = "<group>"; };
+		3D2CCC5B259611EA003AA40A /* ConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
 		5E9C64E1B4DCEC2944C0F4E3 /* Pods_TestTaskUltiself.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskUltiself.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB3B67E1DC808006D02A437 /* Pods-TestTaskUltiself.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskUltiself.release.xcconfig"; path = "Target Support Files/Pods-TestTaskUltiself/Pods-TestTaskUltiself.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +78,7 @@
 		3D2CCC2625960AF6003AA40A /* TestTaskUltiself */ = {
 			isa = PBXGroup;
 			children = (
+				3D2CCC54259611A8003AA40A /* AlamofireNetworkActivityLogger */,
 				3D2CCC4C25960F4B003AA40A /* CustomErrors */,
 				3D2CCC4125960ED1003AA40A /* Services */,
 				3D2CCC2725960AF6003AA40A /* AppDelegate.swift */,
@@ -106,6 +116,18 @@
 			);
 			path = CustomErrors;
 			sourceTree = "<group>";
+		};
+		3D2CCC54259611A8003AA40A /* AlamofireNetworkActivityLogger */ = {
+			isa = PBXGroup;
+			children = (
+				3D2CCC5B259611EA003AA40A /* ConsoleLogger.swift */,
+				3D2CCC5A259611EA003AA40A /* GenericLogger.swift */,
+				3D2CCC59259611EA003AA40A /* MacSystemConsoleLogger.swift */,
+				3D2CCC55259611A8003AA40A /* NetworkActivityLogger.swift */,
+				3D2CCC56259611A8003AA40A /* AlamofireNetworkActivityLogger.h */,
+			);
+			path = AlamofireNetworkActivityLogger;
+			sourceTree = SOURCE_ROOT;
 		};
 		3D95041409BEC5E7D824A3EE /* Frameworks */ = {
 			isa = PBXGroup;
@@ -257,9 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2CCC5C259611EA003AA40A /* MacSystemConsoleLogger.swift in Sources */,
+				3D2CCC5D259611EA003AA40A /* GenericLogger.swift in Sources */,
 				3D2CCC5225960FB9003AA40A /* TargetType + Requests.swift in Sources */,
+				3D2CCC5E259611EA003AA40A /* ConsoleLogger.swift in Sources */,
 				3D2CCC4F25960F85003AA40A /* UltiselfAPIError.swift in Sources */,
 				3D2CCC4425960F13003AA40A /* NetworkManager.swift in Sources */,
+				3D2CCC57259611A8003AA40A /* NetworkActivityLogger.swift in Sources */,
 				3D2CCC2C25960AF6003AA40A /* ViewController.swift in Sources */,
 				3D2CCC2825960AF6003AA40A /* AppDelegate.swift in Sources */,
 				3D2CCC2A25960AF6003AA40A /* SceneDelegate.swift in Sources */,
