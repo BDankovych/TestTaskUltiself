@@ -31,6 +31,7 @@ class HabitsSearchViewController: UIViewController {
         tableView.register(cellType: HabitTableViewCell.self)
         tableView.rowHeight = UITableView.automaticDimension
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.tableFooterView = UIView()
     }
     
@@ -50,7 +51,7 @@ class HabitsSearchViewController: UIViewController {
     }
 }
 
-// MARK: - UITableViewD ataSource
+// MARK: - UITableView DataSource
 extension HabitsSearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         models.count
@@ -62,6 +63,12 @@ extension HabitsSearchViewController: UITableViewDataSource {
         let habit = models[index]
         cell.configure(cellNumber: index + 1, habit: habit)
         return cell
+    }
+}
+
+extension HabitsSearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        habitsService.fetchNextPageIfNeeded(displayedIndex: indexPath.row)
     }
 }
 
