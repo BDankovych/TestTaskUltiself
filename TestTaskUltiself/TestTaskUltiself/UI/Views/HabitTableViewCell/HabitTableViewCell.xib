@@ -16,8 +16,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvw-bN-b8g">
-                        <rect key="frame" x="10" y="0.0" width="41.5" height="99"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvw-bN-b8g">
+                        <rect key="frame" x="0.0" y="10" width="41.5" height="79"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="VjR-TV-qqo"/>
                         </constraints>
@@ -25,14 +25,14 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzp-94-fis">
-                        <rect key="frame" x="61.5" y="0.0" width="296" height="99"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzp-94-fis">
+                        <rect key="frame" x="51.5" y="10" width="316" height="79"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="825-GL-wW0">
-                        <rect key="frame" x="362.5" y="0.0" width="41.5" height="99"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="825-GL-wW0">
+                        <rect key="frame" x="372.5" y="10" width="41.5" height="79"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="TRL-Qg-asY"/>
                         </constraints>
@@ -42,15 +42,15 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="825-GL-wW0" secondAttribute="bottom" id="2Ps-iG-WtJ"/>
+                    <constraint firstAttribute="bottom" secondItem="825-GL-wW0" secondAttribute="bottom" constant="10" id="2Ps-iG-WtJ"/>
                     <constraint firstItem="zzp-94-fis" firstAttribute="leading" secondItem="Pvw-bN-b8g" secondAttribute="trailing" constant="10" id="34n-Ed-rxc"/>
-                    <constraint firstItem="Pvw-bN-b8g" firstAttribute="leading" secondItem="lAv-Ov-Gkw" secondAttribute="leading" constant="10" id="90W-ib-vAF"/>
-                    <constraint firstItem="Pvw-bN-b8g" firstAttribute="top" secondItem="lAv-Ov-Gkw" secondAttribute="top" id="NWo-6q-HjV"/>
-                    <constraint firstItem="825-GL-wW0" firstAttribute="top" secondItem="lAv-Ov-Gkw" secondAttribute="top" id="U4Z-A1-Ozv"/>
-                    <constraint firstItem="zzp-94-fis" firstAttribute="top" secondItem="lAv-Ov-Gkw" secondAttribute="top" id="bQf-sL-OXg"/>
-                    <constraint firstAttribute="bottom" secondItem="Pvw-bN-b8g" secondAttribute="bottom" id="c8i-75-fas"/>
-                    <constraint firstAttribute="trailing" secondItem="825-GL-wW0" secondAttribute="trailing" constant="10" id="eJ4-av-cR8"/>
-                    <constraint firstAttribute="bottom" secondItem="zzp-94-fis" secondAttribute="bottom" id="pZf-hB-Imh"/>
+                    <constraint firstItem="Pvw-bN-b8g" firstAttribute="leading" secondItem="lAv-Ov-Gkw" secondAttribute="leading" id="90W-ib-vAF"/>
+                    <constraint firstItem="Pvw-bN-b8g" firstAttribute="top" secondItem="lAv-Ov-Gkw" secondAttribute="top" constant="10" id="NWo-6q-HjV"/>
+                    <constraint firstItem="825-GL-wW0" firstAttribute="top" secondItem="lAv-Ov-Gkw" secondAttribute="top" constant="10" id="U4Z-A1-Ozv"/>
+                    <constraint firstItem="zzp-94-fis" firstAttribute="top" secondItem="lAv-Ov-Gkw" secondAttribute="top" constant="10" id="bQf-sL-OXg"/>
+                    <constraint firstAttribute="bottom" secondItem="Pvw-bN-b8g" secondAttribute="bottom" constant="10" id="c8i-75-fas"/>
+                    <constraint firstAttribute="trailing" secondItem="825-GL-wW0" secondAttribute="trailing" id="eJ4-av-cR8"/>
+                    <constraint firstAttribute="bottom" secondItem="zzp-94-fis" secondAttribute="bottom" constant="10" id="pZf-hB-Imh"/>
                     <constraint firstItem="825-GL-wW0" firstAttribute="leading" secondItem="zzp-94-fis" secondAttribute="trailing" constant="5" id="pd4-x6-NbW"/>
                 </constraints>
             </tableViewCellContentView>
