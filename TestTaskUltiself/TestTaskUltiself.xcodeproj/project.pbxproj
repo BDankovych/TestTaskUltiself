@@ -26,6 +26,9 @@
 		3D2CCC74259615A5003AA40A /* HabitsSearchRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC73259615A5003AA40A /* HabitsSearchRequestDTO.swift */; };
 		3D2CCC78259615CA003AA40A /* HabitModelDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC77259615CA003AA40A /* HabitModelDTO.swift */; };
 		3D2CCC7B259615DD003AA40A /* HabitsSearchResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC7A259615DD003AA40A /* HabitsSearchResponseDTO.swift */; };
+		3D2CCC7E2596165A003AA40A /* HabitsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC7D2596165A003AA40A /* HabitsAPI.swift */; };
+		3D2CCC82259616C9003AA40A /* Encodable + Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC81259616C9003AA40A /* Encodable + Dictionary.swift */; };
+		3D2CCC86259617B7003AA40A /* HabitsAPIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC85259617B7003AA40A /* HabitsAPIRequests.swift */; };
 		DAE3D505A509194B69E921A2 /* Pods_TestTaskUltiself.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9C64E1B4DCEC2944C0F4E3 /* Pods_TestTaskUltiself.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,9 @@
 		3D2CCC73259615A5003AA40A /* HabitsSearchRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsSearchRequestDTO.swift; sourceTree = "<group>"; };
 		3D2CCC77259615CA003AA40A /* HabitModelDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitModelDTO.swift; sourceTree = "<group>"; };
 		3D2CCC7A259615DD003AA40A /* HabitsSearchResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsSearchResponseDTO.swift; sourceTree = "<group>"; };
+		3D2CCC7D2596165A003AA40A /* HabitsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsAPI.swift; sourceTree = "<group>"; };
+		3D2CCC81259616C9003AA40A /* Encodable + Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable + Dictionary.swift"; sourceTree = "<group>"; };
+		3D2CCC85259617B7003AA40A /* HabitsAPIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsAPIRequests.swift; sourceTree = "<group>"; };
 		5E9C64E1B4DCEC2944C0F4E3 /* Pods_TestTaskUltiself.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskUltiself.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB3B67E1DC808006D02A437 /* Pods-TestTaskUltiself.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskUltiself.release.xcconfig"; path = "Target Support Files/Pods-TestTaskUltiself/Pods-TestTaskUltiself.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				3D2CCC54259611A8003AA40A /* AlamofireNetworkActivityLogger */,
+				3D2CCC8025961693003AA40A /* Extensions */,
 				3D2CCC4C25960F4B003AA40A /* CustomErrors */,
 				3D2CCC4125960ED1003AA40A /* Services */,
 				3D2CCC6F25961533003AA40A /* Networking */,
@@ -174,6 +181,8 @@
 			children = (
 				3D2CCC722596157B003AA40A /* RequestModels */,
 				3D2CCC7125961572003AA40A /* ResponseModels */,
+				3D2CCC7D2596165A003AA40A /* HabitsAPI.swift */,
+				3D2CCC85259617B7003AA40A /* HabitsAPIRequests.swift */,
 			);
 			path = HabitsAPI;
 			sourceTree = "<group>";
@@ -193,6 +202,14 @@
 				3D2CCC73259615A5003AA40A /* HabitsSearchRequestDTO.swift */,
 			);
 			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		3D2CCC8025961693003AA40A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D2CCC81259616C9003AA40A /* Encodable + Dictionary.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		3D95041409BEC5E7D824A3EE /* Frameworks */ = {
@@ -346,8 +363,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D2CCC74259615A5003AA40A /* HabitsSearchRequestDTO.swift in Sources */,
+				3D2CCC82259616C9003AA40A /* Encodable + Dictionary.swift in Sources */,
 				3D2CCC5C259611EA003AA40A /* MacSystemConsoleLogger.swift in Sources */,
 				3D2CCC5D259611EA003AA40A /* GenericLogger.swift in Sources */,
+				3D2CCC86259617B7003AA40A /* HabitsAPIRequests.swift in Sources */,
 				3D2CCC662596136D003AA40A /* DefaultDecoder.swift in Sources */,
 				3D2CCC5225960FB9003AA40A /* TargetType + Requests.swift in Sources */,
 				3D2CCC5E259611EA003AA40A /* ConsoleLogger.swift in Sources */,
@@ -358,6 +377,7 @@
 				3D2CCC57259611A8003AA40A /* NetworkActivityLogger.swift in Sources */,
 				3D2CCC2C25960AF6003AA40A /* ViewController.swift in Sources */,
 				3D2CCC2825960AF6003AA40A /* AppDelegate.swift in Sources */,
+				3D2CCC7E2596165A003AA40A /* HabitsAPI.swift in Sources */,
 				3D2CCC6B25961399003AA40A /* DecodingError.swift in Sources */,
 				3D2CCC2A25960AF6003AA40A /* SceneDelegate.swift in Sources */,
 				3D2CCC7B259615DD003AA40A /* HabitsSearchResponseDTO.swift in Sources */,
