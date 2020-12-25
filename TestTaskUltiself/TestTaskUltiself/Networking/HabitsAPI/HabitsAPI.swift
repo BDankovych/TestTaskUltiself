@@ -36,8 +36,8 @@ extension HabitsAPI {
         switch self {
         case .getHabitShortInfo:
             let model = HabitsSearchResponseModelDTO(data: [
-                HabitDataDTO(id: 1, title: "test 1"),
-                HabitDataDTO(id: 2, title: "test 2")
+                HabitModelDTO(id: 1, title: "test 1"),
+                HabitModelDTO(id: 2, title: "test 2")
             ],
             error: ""
             )
