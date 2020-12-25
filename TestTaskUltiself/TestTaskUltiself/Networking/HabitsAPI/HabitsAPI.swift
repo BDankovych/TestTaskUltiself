@@ -67,7 +67,7 @@ extension HabitsAPI {
         }
     }
     
-    var headers: [String : String]? {
+    var headers: [String: String]? {
         switch self {
         case .getHabitShortInfo:
             return defaultHeaders
