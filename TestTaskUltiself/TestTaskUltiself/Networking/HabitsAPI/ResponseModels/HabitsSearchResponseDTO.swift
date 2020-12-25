@@ -8,10 +8,10 @@
 import Foundation
 
 class HabitsSearchResponseModelDTO: Codable {
-    private(set) var data: [HabitDataDTO]
+    private(set) var data: [HabitModelDTO]
     private(set) var error: String
     
-    init(data: [HabitDataDTO], error: String) {
+    init(data: [HabitModelDTO], error: String) {
         self.data = data
         self.error = error
     }

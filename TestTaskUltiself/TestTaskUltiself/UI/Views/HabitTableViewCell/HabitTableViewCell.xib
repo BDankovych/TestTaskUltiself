@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabitTableViewCell" rowHeight="99" id="I7O-Aw-6nU" customClass="HabitTableViewCell" customModule="TestTaskUltiself" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I7O-Aw-6nU" id="lAv-Ov-Gkw">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvw-bN-b8g">
+                        <rect key="frame" x="10" y="0.0" width="41.5" height="99"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="VjR-TV-qqo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzp-94-fis">
+                        <rect key="frame" x="61.5" y="0.0" width="296" height="99"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="825-GL-wW0">
+                        <rect key="frame" x="362.5" y="0.0" width="41.5" height="99"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="TRL-Qg-asY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="825-GL-wW0" secondAttribute="bottom" id="2Ps-iG-WtJ"/>
+                    <constraint firstItem="zzp-94-fis" firstAttribute="leading" secondItem="Pvw-bN-b8g" secondAttribute="trailing" constant="10" id="34n-Ed-rxc"/>
+                    <constraint firstItem="Pvw-bN-b8g" firstAttribute="leading" secondItem="lAv-Ov-Gkw" secondAttribute="leading" constant="10" id="90W-ib-vAF"/>
+                    <constraint firstItem="Pvw-bN-b8g" firstAttribute="top" secondItem="lAv-Ov-Gkw" secondAttribute="top" id="NWo-6q-HjV"/>
+                    <constraint firstItem="825-GL-wW0" firstAttribute="top" secondItem="lAv-Ov-Gkw" secondAttribute="top" id="U4Z-A1-Ozv"/>
+                    <constraint firstItem="zzp-94-fis" firstAttribute="top" secondItem="lAv-Ov-Gkw" secondAttribute="top" id="bQf-sL-OXg"/>
+                    <constraint firstAttribute="bottom" secondItem="Pvw-bN-b8g" secondAttribute="bottom" id="c8i-75-fas"/>
+                    <constraint firstAttribute="trailing" secondItem="825-GL-wW0" secondAttribute="trailing" constant="10" id="eJ4-av-cR8"/>
+                    <constraint firstAttribute="bottom" secondItem="zzp-94-fis" secondAttribute="bottom" id="pZf-hB-Imh"/>
+                    <constraint firstItem="825-GL-wW0" firstAttribute="leading" secondItem="zzp-94-fis" secondAttribute="trailing" constant="5" id="pd4-x6-NbW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellNumberLabel" destination="Pvw-bN-b8g" id="oie-GX-sCi"/>
+                <outlet property="habitIdLabel" destination="825-GL-wW0" id="euA-74-Zqm"/>
+                <outlet property="habitTitleLabel" destination="zzp-94-fis" id="138-pD-mkJ"/>
+            </connections>
+            <point key="canvasLocation" x="-39.130434782608695" y="19.084821428571427"/>
+        </tableViewCell>
+    </objects>
+</document>

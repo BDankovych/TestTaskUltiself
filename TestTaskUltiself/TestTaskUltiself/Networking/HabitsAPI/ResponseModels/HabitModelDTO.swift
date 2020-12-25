@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HabitDataDTO: Codable {
+class HabitModelDTO: Codable {
     private(set) var id: Int
     private(set) var title: String
     
