@@ -29,6 +29,8 @@
 		3D2CCC7E2596165A003AA40A /* HabitsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC7D2596165A003AA40A /* HabitsAPI.swift */; };
 		3D2CCC82259616C9003AA40A /* Encodable + Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC81259616C9003AA40A /* Encodable + Dictionary.swift */; };
 		3D2CCC86259617B7003AA40A /* HabitsAPIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC85259617B7003AA40A /* HabitsAPIRequests.swift */; };
+		3D2CCC8C259619B7003AA40A /* UITableView + ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC8B259619B7003AA40A /* UITableView + ReusableCells.swift */; };
+		3D2CCC9025961A15003AA40A /* UIView + LoadFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC8F25961A15003AA40A /* UIView + LoadFromNib.swift */; };
 		DAE3D505A509194B69E921A2 /* Pods_TestTaskUltiself.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9C64E1B4DCEC2944C0F4E3 /* Pods_TestTaskUltiself.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		3D2CCC7D2596165A003AA40A /* HabitsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsAPI.swift; sourceTree = "<group>"; };
 		3D2CCC81259616C9003AA40A /* Encodable + Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable + Dictionary.swift"; sourceTree = "<group>"; };
 		3D2CCC85259617B7003AA40A /* HabitsAPIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsAPIRequests.swift; sourceTree = "<group>"; };
+		3D2CCC8B259619B7003AA40A /* UITableView + ReusableCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView + ReusableCells.swift"; sourceTree = "<group>"; };
+		3D2CCC8F25961A15003AA40A /* UIView + LoadFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + LoadFromNib.swift"; sourceTree = "<group>"; };
 		5E9C64E1B4DCEC2944C0F4E3 /* Pods_TestTaskUltiself.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskUltiself.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB3B67E1DC808006D02A437 /* Pods-TestTaskUltiself.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskUltiself.release.xcconfig"; path = "Target Support Files/Pods-TestTaskUltiself/Pods-TestTaskUltiself.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,9 +211,19 @@
 		3D2CCC8025961693003AA40A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3D2CCC8A25961978003AA40A /* UI */,
 				3D2CCC81259616C9003AA40A /* Encodable + Dictionary.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3D2CCC8A25961978003AA40A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3D2CCC8B259619B7003AA40A /* UITableView + ReusableCells.swift */,
+				3D2CCC8F25961A15003AA40A /* UIView + LoadFromNib.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		3D95041409BEC5E7D824A3EE /* Frameworks */ = {
@@ -378,8 +392,10 @@
 				3D2CCC2C25960AF6003AA40A /* ViewController.swift in Sources */,
 				3D2CCC2825960AF6003AA40A /* AppDelegate.swift in Sources */,
 				3D2CCC7E2596165A003AA40A /* HabitsAPI.swift in Sources */,
+				3D2CCC9025961A15003AA40A /* UIView + LoadFromNib.swift in Sources */,
 				3D2CCC6B25961399003AA40A /* DecodingError.swift in Sources */,
 				3D2CCC2A25960AF6003AA40A /* SceneDelegate.swift in Sources */,
+				3D2CCC8C259619B7003AA40A /* UITableView + ReusableCells.swift in Sources */,
 				3D2CCC7B259615DD003AA40A /* HabitsSearchResponseDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
