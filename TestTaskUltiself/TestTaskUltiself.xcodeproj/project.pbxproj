@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,16 @@
 		3D2CCC2F25960AF6003AA40A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CCC2D25960AF6003AA40A /* Main.storyboard */; };
 		3D2CCC3125960AF7003AA40A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CCC3025960AF7003AA40A /* Assets.xcassets */; };
 		3D2CCC3425960AF7003AA40A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CCC3225960AF7003AA40A /* LaunchScreen.storyboard */; };
+		3D2CCC4425960F13003AA40A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC4325960F13003AA40A /* NetworkManager.swift */; };
+		3D2CCC4F25960F85003AA40A /* UltiselfAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC4E25960F85003AA40A /* UltiselfAPIError.swift */; };
+		3D2CCC5225960FB9003AA40A /* TargetType + Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC5125960FB9003AA40A /* TargetType + Requests.swift */; };
+		3D2CCC57259611A8003AA40A /* NetworkActivityLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC55259611A8003AA40A /* NetworkActivityLogger.swift */; };
+		3D2CCC5C259611EA003AA40A /* MacSystemConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC59259611EA003AA40A /* MacSystemConsoleLogger.swift */; };
+		3D2CCC5D259611EA003AA40A /* GenericLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC5A259611EA003AA40A /* GenericLogger.swift */; };
+		3D2CCC5E259611EA003AA40A /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC5B259611EA003AA40A /* ConsoleLogger.swift */; };
+		3D2CCC6125961318003AA40A /* TargetType + BaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC6025961318003AA40A /* TargetType + BaseConfig.swift */; };
+		3D2CCC662596136D003AA40A /* DefaultDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC652596136D003AA40A /* DefaultDecoder.swift */; };
+		3D2CCC6B25961399003AA40A /* DecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC6A25961399003AA40A /* DecodingError.swift */; };
 		DAE3D505A509194B69E921A2 /* Pods_TestTaskUltiself.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9C64E1B4DCEC2944C0F4E3 /* Pods_TestTaskUltiself.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +36,17 @@
 		3D2CCC3025960AF7003AA40A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D2CCC3325960AF7003AA40A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D2CCC3525960AF7003AA40A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D2CCC4325960F13003AA40A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3D2CCC4E25960F85003AA40A /* UltiselfAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltiselfAPIError.swift; sourceTree = "<group>"; };
+		3D2CCC5125960FB9003AA40A /* TargetType + Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetType + Requests.swift"; sourceTree = "<group>"; };
+		3D2CCC55259611A8003AA40A /* NetworkActivityLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkActivityLogger.swift; sourceTree = "<group>"; };
+		3D2CCC56259611A8003AA40A /* AlamofireNetworkActivityLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlamofireNetworkActivityLogger.h; sourceTree = "<group>"; };
+		3D2CCC59259611EA003AA40A /* MacSystemConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacSystemConsoleLogger.swift; sourceTree = "<group>"; };
+		3D2CCC5A259611EA003AA40A /* GenericLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericLogger.swift; sourceTree = "<group>"; };
+		3D2CCC5B259611EA003AA40A /* ConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
+		3D2CCC6025961318003AA40A /* TargetType + BaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetType + BaseConfig.swift"; sourceTree = "<group>"; };
+		3D2CCC652596136D003AA40A /* DefaultDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDecoder.swift; sourceTree = "<group>"; };
+		3D2CCC6A25961399003AA40A /* DecodingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingError.swift; sourceTree = "<group>"; };
 		5E9C64E1B4DCEC2944C0F4E3 /* Pods_TestTaskUltiself.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskUltiself.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB3B67E1DC808006D02A437 /* Pods-TestTaskUltiself.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskUltiself.release.xcconfig"; path = "Target Support Files/Pods-TestTaskUltiself/Pods-TestTaskUltiself.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +84,9 @@
 		3D2CCC2625960AF6003AA40A /* TestTaskUltiself */ = {
 			isa = PBXGroup;
 			children = (
+				3D2CCC54259611A8003AA40A /* AlamofireNetworkActivityLogger */,
+				3D2CCC4C25960F4B003AA40A /* CustomErrors */,
+				3D2CCC4125960ED1003AA40A /* Services */,
 				3D2CCC2725960AF6003AA40A /* AppDelegate.swift */,
 				3D2CCC2925960AF6003AA40A /* SceneDelegate.swift */,
 				3D2CCC2B25960AF6003AA40A /* ViewController.swift */,
@@ -72,6 +96,62 @@
 				3D2CCC3525960AF7003AA40A /* Info.plist */,
 			);
 			path = TestTaskUltiself;
+			sourceTree = "<group>";
+		};
+		3D2CCC4125960ED1003AA40A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3D2CCC642596135D003AA40A /* Helpers */,
+				3D2CCC4225960EDB003AA40A /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3D2CCC4225960EDB003AA40A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3D2CCC4325960F13003AA40A /* NetworkManager.swift */,
+				3D2CCC6325961328003AA40A /* TargetType */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3D2CCC4C25960F4B003AA40A /* CustomErrors */ = {
+			isa = PBXGroup;
+			children = (
+				3D2CCC4E25960F85003AA40A /* UltiselfAPIError.swift */,
+				3D2CCC6A25961399003AA40A /* DecodingError.swift */,
+			);
+			path = CustomErrors;
+			sourceTree = "<group>";
+		};
+		3D2CCC54259611A8003AA40A /* AlamofireNetworkActivityLogger */ = {
+			isa = PBXGroup;
+			children = (
+				3D2CCC5B259611EA003AA40A /* ConsoleLogger.swift */,
+				3D2CCC5A259611EA003AA40A /* GenericLogger.swift */,
+				3D2CCC59259611EA003AA40A /* MacSystemConsoleLogger.swift */,
+				3D2CCC55259611A8003AA40A /* NetworkActivityLogger.swift */,
+				3D2CCC56259611A8003AA40A /* AlamofireNetworkActivityLogger.h */,
+			);
+			path = AlamofireNetworkActivityLogger;
+			sourceTree = SOURCE_ROOT;
+		};
+		3D2CCC6325961328003AA40A /* TargetType */ = {
+			isa = PBXGroup;
+			children = (
+				3D2CCC5125960FB9003AA40A /* TargetType + Requests.swift */,
+				3D2CCC6025961318003AA40A /* TargetType + BaseConfig.swift */,
+			);
+			path = TargetType;
+			sourceTree = "<group>";
+		};
+		3D2CCC642596135D003AA40A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3D2CCC652596136D003AA40A /* DefaultDecoder.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		3D95041409BEC5E7D824A3EE /* Frameworks */ = {
@@ -103,6 +183,7 @@
 				3D2CCC2125960AF6003AA40A /* Frameworks */,
 				3D2CCC2225960AF6003AA40A /* Resources */,
 				3D2CCC4025960C43003AA40A /* SwiftLint run */,
+				6A5382D472768810FC0F5A5F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +280,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		6A5382D472768810FC0F5A5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskUltiself/Pods-TestTaskUltiself-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskUltiself/Pods-TestTaskUltiself-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestTaskUltiself/Pods-TestTaskUltiself-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -206,8 +304,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2CCC5C259611EA003AA40A /* MacSystemConsoleLogger.swift in Sources */,
+				3D2CCC5D259611EA003AA40A /* GenericLogger.swift in Sources */,
+				3D2CCC662596136D003AA40A /* DefaultDecoder.swift in Sources */,
+				3D2CCC5225960FB9003AA40A /* TargetType + Requests.swift in Sources */,
+				3D2CCC5E259611EA003AA40A /* ConsoleLogger.swift in Sources */,
+				3D2CCC6125961318003AA40A /* TargetType + BaseConfig.swift in Sources */,
+				3D2CCC4F25960F85003AA40A /* UltiselfAPIError.swift in Sources */,
+				3D2CCC4425960F13003AA40A /* NetworkManager.swift in Sources */,
+				3D2CCC57259611A8003AA40A /* NetworkActivityLogger.swift in Sources */,
 				3D2CCC2C25960AF6003AA40A /* ViewController.swift in Sources */,
 				3D2CCC2825960AF6003AA40A /* AppDelegate.swift in Sources */,
+				3D2CCC6B25961399003AA40A /* DecodingError.swift in Sources */,
 				3D2CCC2A25960AF6003AA40A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
