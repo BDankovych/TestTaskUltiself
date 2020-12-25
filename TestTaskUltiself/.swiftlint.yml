@@ -8,5 +8,8 @@ included:
 excluded:
   - Pods
 line_length: 200
+identifier_name:
+  excluded:
+    - id
 trailing_whitespace:
   ignores_empty_lines: true
