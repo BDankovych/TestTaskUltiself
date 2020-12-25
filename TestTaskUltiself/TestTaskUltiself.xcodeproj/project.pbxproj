@@ -13,9 +13,11 @@
 		3D2CCC2F25960AF6003AA40A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CCC2D25960AF6003AA40A /* Main.storyboard */; };
 		3D2CCC3125960AF7003AA40A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CCC3025960AF7003AA40A /* Assets.xcassets */; };
 		3D2CCC3425960AF7003AA40A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CCC3225960AF7003AA40A /* LaunchScreen.storyboard */; };
+		DAE3D505A509194B69E921A2 /* Pods_TestTaskUltiself.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9C64E1B4DCEC2944C0F4E3 /* Pods_TestTaskUltiself.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E1ADF40A7308CCEB85B6916 /* Pods-TestTaskUltiself.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskUltiself.debug.xcconfig"; path = "Target Support Files/Pods-TestTaskUltiself/Pods-TestTaskUltiself.debug.xcconfig"; sourceTree = "<group>"; };
 		3D2CCC2425960AF6003AA40A /* TestTaskUltiself.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskUltiself.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2CCC2725960AF6003AA40A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D2CCC2925960AF6003AA40A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		3D2CCC3025960AF7003AA40A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D2CCC3325960AF7003AA40A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D2CCC3525960AF7003AA40A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E9C64E1B4DCEC2944C0F4E3 /* Pods_TestTaskUltiself.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskUltiself.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB3B67E1DC808006D02A437 /* Pods-TestTaskUltiself.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskUltiself.release.xcconfig"; path = "Target Support Files/Pods-TestTaskUltiself/Pods-TestTaskUltiself.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE3D505A509194B69E921A2 /* Pods_TestTaskUltiself.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				3D2CCC2625960AF6003AA40A /* TestTaskUltiself */,
 				3D2CCC2525960AF6003AA40A /* Products */,
+				A15152BD288260CD578E79A9 /* Pods */,
+				3D95041409BEC5E7D824A3EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = TestTaskUltiself;
 			sourceTree = "<group>";
 		};
+		3D95041409BEC5E7D824A3EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E9C64E1B4DCEC2944C0F4E3 /* Pods_TestTaskUltiself.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A15152BD288260CD578E79A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E1ADF40A7308CCEB85B6916 /* Pods-TestTaskUltiself.debug.xcconfig */,
+				7EB3B67E1DC808006D02A437 /* Pods-TestTaskUltiself.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D2CCC3825960AF7003AA40A /* Build configuration list for PBXNativeTarget "TestTaskUltiself" */;
 			buildPhases = (
+				3D02A2FCC93678343DB86AC8 /* [CP] Check Pods Manifest.lock */,
 				3D2CCC2025960AF6003AA40A /* Sources */,
 				3D2CCC2125960AF6003AA40A /* Frameworks */,
 				3D2CCC2225960AF6003AA40A /* Resources */,
+				3D2CCC4025960C43003AA40A /* SwiftLint run */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D02A2FCC93678343DB86AC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestTaskUltiself-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D2CCC4025960C43003AA40A /* SwiftLint run */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint run";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D2CCC2025960AF6003AA40A /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		3D2CCC3925960AF7003AA40A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E1ADF40A7308CCEB85B6916 /* Pods-TestTaskUltiself.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +373,7 @@
 		};
 		3D2CCC3A25960AF7003AA40A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB3B67E1DC808006D02A437 /* Pods-TestTaskUltiself.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
