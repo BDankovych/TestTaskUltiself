@@ -10,6 +10,7 @@ import Foundation
 protocol HabitsFetchServiceDelegate: class {
     func dataUpdatedSuccessful(data: [HabitModelDTO], service: HabitsFetchService)
     func dataUpdateFailure(error: Error, service: HabitsFetchService)
+    func dataUpdatingStarted()
 }
 
 class HabitsFetchService {
@@ -37,6 +38,7 @@ class HabitsFetchService {
     
     private func updateSearchModel(query: String) {
         data = []
+        delegate?.dataUpdatedSuccessful(data: data, service: self)
         currentSearchModel = CurrentSearchModel(query: query, page: 1)
     }
     
@@ -64,7 +66,7 @@ class HabitsFetchService {
                                                       page: currentSearchModel.page,
                                                       pageSize: CurrentSearchModel.pageSize
         )
-        
+        delegate?.dataUpdatingStarted()
         HabitsAPI.request(.getHabitShortInfo(searchModel: searchModel), codable: HabitsSearchResponseModelDTO.self) { [weak self] model in
             guard let self = self else { return }
             self.semaphore.signal()

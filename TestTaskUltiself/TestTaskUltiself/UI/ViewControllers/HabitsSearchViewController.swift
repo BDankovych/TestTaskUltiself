@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ARSLineProgress
 
 class HabitsSearchViewController: UIViewController {
     
@@ -49,6 +50,17 @@ class HabitsSearchViewController: UIViewController {
         models = data
         tableView.reloadData()
     }
+    
+    // MARK: - ARSLineProgress
+    private func showSpinner() {
+        view.isUserInteractionEnabled = false
+        ARSLineProgress.show()
+    }
+    
+    private func hideSpinner() {
+        ARSLineProgress.hide()
+        view.isUserInteractionEnabled = true
+    }
 }
 
 // MARK: - UITableView DataSource
@@ -91,9 +103,15 @@ extension HabitsSearchViewController: UISearchBarDelegate {
 extension HabitsSearchViewController: HabitsFetchServiceDelegate {
     func dataUpdatedSuccessful(data: [HabitModelDTO], service: HabitsFetchService) {
         updateView(with: data)
+        hideSpinner()
     }
     
     func dataUpdateFailure(error: Error, service: HabitsFetchService) {
+        hideSpinner()
         displayAlert(with: error)
+    }
+    
+    func dataUpdatingStarted() {
+        showSpinner()
     }
 }
